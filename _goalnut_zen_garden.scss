@@ -1,0 +1,122 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+#title {
+    color: $title-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+}
+#title h2 {
+    font-size: 20px;
+}
+ul {
+    list-style: none;
+    font-family: 'Merriweather', serif;
+    color: $title-blue;
+    display: block;
+}
+
+#project_intro {
+    display: block;
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.link_to_projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 40px;
+    margin-bottom: -10px;
+}
+.link_to_projects #goalnut_github_button {
+    text-decoration: none;
+    border: 1px solid $title-blue;
+    color: $title-blue;
+    padding: 2.5px;
+    &:hover {
+        transform: scale(1.2);
+        background-color: $common-grey;
+        border-color: $common-purple;
+        color: $common-purple;
+        }
+}
+.project_info {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    grid-auto-rows: minmax (50px, auto);
+    max-width: 60%;
+    margin-top: 30px;
+    margin: auto;
+}
+.next_project_button {
+    text-decoration: none;
+    color: $small-yellow;
+    font-size: 40px;
+    margin: 5%;
+    margin: auto;
+    padding: 50px;
+    font-weight: 500;
+}
+.project_screenshot img {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+@media screen and (max-width:630px) {
+    .project_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        justify-content: flex-start;
+    }
+    .link_to_projects {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        text-decoration: none;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 80px;
+    }
+    #project_intro {
+        text-align: left;
+    }
+    #title {
+        justify-content: start;
+    }
+    .next_project_button {
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+@media screen and (min-width:1000px) {
+    .project_info {
+        font-size: 20px;
+        margin-top: 55px;
+        margin-left: 20px;
+    }
+    #title h2 {
+        font-size: 30px;
+    }
+    .next_project_button {
+        font-size: 50px;
+        font-weight: 700;
+    }
+}
+
+
+    
+

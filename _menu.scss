@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import "variables";
+
+nav{
+    display: inline-block;
+    clear:right;
+    padding:0;
+    margin:0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav a {
+    text-decoration-line: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size:100%;
+    font-weight:300;
+    color: #000000;
+    display:block;
+    padding: 0;
+    margin-top: 0;
+}
+nav a:hover {
+    // background-color: $common-purple;
+    // border-radius: 4%;
+    transform: translateY(-6px);
+}
+.homepage nav ul li a, .about_me nav ul li a, .contact_me nav ul li a {
+    color:#FFFFFF;
+}
+@media screen and (min-width:599px) {
+    nav {
+        margin-top:15px;
+    }
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        justify-content: space-around;
+    }
+    nav li {
+        flex: 1 1 1;
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right: 1.5px solid white;
+    }
+    nav .contact_nav {
+        border-right: none;
+    }
+    nav a {
+        font-size: 19px;
+    }
+    .black_logo_menu li {
+        flex: 1 1 1;
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right: 1.5px solid black;
+    }
+    .black_logo_menu .contact_nav {
+        border-right: none;
+    }
+}

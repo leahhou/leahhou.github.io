@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700|Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:400,700');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+@import "variables";
+@import "header";
+@import "menu";
+
+@import "homepage";
+@import "project_summary";
+@import "about_me";
+@import "contact";
+@import "goalnut_zen_garden";
+
+
+html {
+    scroll-behavior: smooth;
+   }

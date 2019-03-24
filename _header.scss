@@ -1,0 +1,63 @@
+@import "variables";
+
+header {
+  display: inline-block;
+  margin-left: 10px;
+  padding-left:10px;
+  width: 65%;
+  height:20px;
+  vertical-align: top;
+  margin-top: 16px;
+}
+header a {
+    text-decoration-line: none;
+    text-decoration: none;
+    font-size: 150%;
+    font-weight: bold;
+    color: #000000;
+    display: inline-block;
+    &:hover {
+        transform: scale(0.9);
+    }
+}
+.homepage header a, .about_me header a, .contact_me header a  {
+  color: white;
+}
+header a{
+  font-size: 32px;
+}
+
+.about_me header a, .contact_me header a {
+    -webkit-animation: color_change 10s infinite alternate;
+  -moz-animation: color_change 10s infinite alternate;
+  -ms-animation: color_change 10s infinite alternate;
+  -o-animation: color_change 10s infinite alternate;
+  animation: color_change 10s infinite alternate;
+  @-webkit-keyframes color_change {
+      // from { background-color: $large-red; }
+      // to { background-color: $large-yellow; }
+      0% {
+          color: blue;
+      }
+      25% {
+          color: orange;
+      }
+      50% {
+          color: yellow;
+      }
+      75% {
+          color: black;
+      }
+      100% {
+          color: red;
+      }
+  }
+}
+@media screen and (min-width:500px) {
+  .logo_menu {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    padding-top: 20px;
+  }
+}

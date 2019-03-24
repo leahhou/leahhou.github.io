@@ -1,0 +1,119 @@
+@import "variables";
+
+.contact_me {
+    background-color: $large-yellow;
+    width: 100%;
+    height: 100vh;
+}
+.slogan_contact_me h3 {
+    color: #FFFFFF;
+    font-family:'Gothic A1', sans-serif;
+    font-weight: 700;
+    width: 50%;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+.slogan_contact_me span {
+    color: $small-red;
+}
+.contact_form {
+    color: #FFFFFF;
+    width: 80%;
+    margin-left: 10%;
+}
+.contact_form input[type=text] {
+    height: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid #FFFFFF;
+    background-color: $large-yellow;
+    color: #FFFFFF;
+    font-weight: 200;
+    width: 200px;
+}
+.contact_form input[type=submit] {
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 6px;
+    background-color: $small-yellow;
+    font-weight: 200;
+    width: 200px;
+    &:hover {
+        background-color: $common-purple;
+        font-weight: 500;
+        transform: scale(0.9);
+    }
+}
+.my_contact_details {
+    color: #FFFFFF;
+    display: block;
+    width: 70%;
+    margin-left:30%;
+    margin-top: 30px;
+}
+.my_contact_details span {
+   color: $small-red;
+}
+footer {
+    background-color: $large-yellow;
+    width: 100%;
+    margin: auto;
+    height: 40%;
+    color: #FFFFFF;
+    font-weight: 200;
+    font-size: 12px;
+    text-align: center;
+}
+.social_media_link {
+    // display:relative;
+    text-align: center;
+    margin: 40px;
+    margin-top:-4px;
+    display: block;
+}
+.social_media_link #linkedIn {
+   width: 22px;
+   height: 22px;
+   margin: 5px;
+   padding: 0;
+   &:hover {
+    transform: scale(1.5);
+    }
+}
+.social_media_link #github {
+    width: 22px;
+    height: 22px;
+    margin: 5px;
+    padding: 0;
+    &:hover {
+        transform: scale(1.5);
+        }
+    }
+@media screen and (min-width:960px) {
+    .slogan_contact_me h3 {
+        width: 80%;
+        font-size: 8em;
+        margin: auto;
+    }
+    .contact_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        margin-top: 5%;
+    }
+    .my_contact_details p {
+        font-size: 2em;
+        font-weight: 300;
+    }
+    .contact_wrapper_2 {
+        display: flex;
+        flex-direction: row;
+        height: 20px;
+        width: 50%;
+        margin-left: 20%;
+    }
+
+    .contact_me .social_media_link {
+
+    }
+} 
