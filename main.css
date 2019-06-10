@@ -94,10 +94,11 @@ nav a {
 }
 
 nav a:hover {
-  transform: translateY(-6px);
+  transform: translateY(-1px);
+  font-weight: 400;
 }
 
-.homepage nav ul li a, .about_me nav ul li a, .contact_me nav ul li a {
+.homepage nav ul li a, .contact_me nav ul li a {
   color: #FFFFFF;
 }
 

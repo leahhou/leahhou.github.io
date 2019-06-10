@@ -23,11 +23,10 @@ nav a {
     margin-top: 0;
 }
 nav a:hover {
-    // background-color: $common-purple;
-    // border-radius: 4%;
-    transform: translateY(-6px);
+    transform: translateY(-1px);
+    font-weight: 400;
 }
-.homepage nav ul li a, .about_me nav ul li a, .contact_me nav ul li a {
+.homepage nav ul li a, .contact_me nav ul li a {
     color:#FFFFFF;
 }
 @media screen and (min-width:599px) {

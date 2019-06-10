@@ -179,42 +179,6 @@
     max-width: 400px;
     margin: 10px auto 20px;
 }
-// #education_title {
-//     display: inline-block;
-//     display: flex;
-//     flex-direction: column;
-//     margin: 30px 10px 20px 10px;
-//     padding: 0;
-//     width: 30%;
-// }
-// .my_education #education_title span {
-//     display: inline-block;
-// }
-// #education_content {
-//     width: 80%;
-//     text-align: left;
-//     margin-left: 10px;
-//     display: inline-block;
-//     margin-top: -60%;
-//     margin-left: 15%;
-// }
-// #education_content h4 {
-//     font-size: 15px;
-//     font-weight: 300;
-//     color: $text-grey;
-// }
-// #education_content h4 span {
-//     font-size: 13px;
-//     font-style: italic;
-// }
-
-// #education_content h5 {
-//     font-size: 13px;
-//     font-weight: 300;
-//     font-style: italic;
-//     color: $text-grey;
-//     margin: 5px;
-// }
 @media screen and (min-width:650px) {
     .headshot {
         height: 500px;
@@ -239,9 +203,6 @@
         margin-top: -100%;
         max-width: 600px;
     }
-    // .my_skills h3 {
-    //     font-size: 3em;
-    // }
     #skill_icons {
         display: flex;
         justify-content: center;
