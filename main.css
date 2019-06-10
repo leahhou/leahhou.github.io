@@ -292,6 +292,15 @@ h2 .slogan_highlight {
     margin-top: 50px;
   }
 }
+h2 {
+  font-size: 40px;
+  color: #032644;
+  text-align: center;
+  display: block;
+  display: relative;
+  margin: 0;
+}
+
 h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -303,30 +312,38 @@ h3 {
   margin-bottom: 30px;
 }
 
-h2 {
-  font-size: 40px;
-  color: #032644;
-  text-align: center;
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #B8C7C9;
+  font-size: 25px;
   display: block;
-  display: relative;
-  margin: 0;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.goalnut_app {
-  display: relative;
+.project_scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.project_scroll .card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 10px;
 }
 
-.goalnut_app a {
+.card a {
   display: block;
   text-decoration-line: none;
   text-decoration: none;
 }
-.goalnut_app a:hover {
-  transform: translate(-10px, -20px);
+.card a:hover {
+  transform: translate(-1px, -1px);
 }
 
-.goalnut_app a #goalnut_bg {
+.card .project_bg {
   display: block;
   display: relative;
   width: 90%;
@@ -334,7 +351,7 @@ h2 {
   padding: 5%;
 }
 
-.goalnut_app a #goalnut_display {
+.card .project_img {
   display: block;
   display: relative;
   width: 80%;
@@ -343,113 +360,11 @@ h2 {
   margin-top: -65%;
 }
 
-.goalnut_app a #goalnut_title_1 {
+.card .card_title_1 {
   margin-top: -35px;
 }
 
-.goalnut_app a #goalnut_title_2 {
-  margin-bottom: 40px;
-}
-
-.css_zen_garden {
-  display: relative;
-  margin-bottom: 10px;
-}
-
-.css_zen_garden a {
-  display: block;
-  text-decoration-line: none;
-  text-decoration: none;
-}
-.css_zen_garden a:hover {
-  transform: translate(-10px, -20px);
-}
-
-.css_zen_garden #css_zen_garden_bg {
-  display: block;
-  display: relative;
-  width: 90%;
-  height: 90%;
-  padding: 5%;
-}
-
-.css_zen_garden #css_zen_garden_display {
-  display: block;
-  display: relative;
-  width: 80%;
-  height: 100%;
-  padding: 10%;
-  margin-top: -65%;
-}
-
-.css_zen_garden #css_zen_garden_title_1 {
-  display: relative;
-  margin-top: -40px;
-}
-
-.css_zen_garden #css_zen_garden_title_2 {
-  margin-bottom: 40px;
-}
-
-.future_coder_project_1 {
-  display: relative;
-  margin-bottom: 10px;
-}
-
-.future_coder_project_1 #future_project_1_bg {
-  display: block;
-  display: relative;
-  width: 90%;
-  height: 90%;
-  padding: 5%;
-}
-
-.future_coder_project_1 #future_project_1_display {
-  display: block;
-  display: relative;
-  width: 80%;
-  height: 100%;
-  padding: 10%;
-  margin-top: -65%;
-}
-
-.future_coder_project_1 #future_coder_project_1_title_1 {
-  display: relative;
-  margin-top: -40px;
-}
-
-.future_coder_project_1 #future_coder_project_1_title_2 {
-  margin-bottom: 40px;
-}
-
-.future_coder_project_2 {
-  display: relative;
-  margin-bottom: 10px;
-}
-
-.future_coder_project_2 #future_project_2_bg {
-  display: block;
-  display: relative;
-  width: 90%;
-  height: 90%;
-  padding: 5%;
-}
-
-.future_coder_project_2 #future_project_2_display {
-  display: block;
-  display: relative;
-  width: 80%;
-  height: 100%;
-  padding: 10%;
-  margin-top: -65%;
-}
-
-.future_coder_project_2 #future_coder_project_2_title_1 {
-  display: relative;
-  margin-top: -40px;
-}
-
-.future_coder_project_2 #future_coder_project_2_title_2 {
+.card .card_title_2 {
   margin-bottom: 40px;
 }
 
@@ -458,107 +373,27 @@ h2 {
     font-size: 50px;
   }
 
-  .goalnut_app a #goalnut_title_1 {
-    margin-top: -50px;
-  }
-
-  .css_zen_garden #css_zen_garden_title_1 {
-    margin-top: -50px;
-  }
-
-  .future_coder_project_1 #future_coder_project_1_title_1 {
-    margin-top: -50px;
-  }
-
-  .future_coder_project_2 #future_coder_project_2_title_1 {
+  .card .card_title_1 {
     margin-top: -50px;
   }
 }
 @media screen and (min-width: 700px) {
   h2 {
-    font-size: 78px;
+    font-size: 70px;
   }
 
-  .goalnut_app a #goalnut_title_1 {
+  .card .card_title_1 {
     margin-top: -80px;
   }
 
-  .css_zen_garden #css_zen_garden_title_1 {
-    margin-top: -80px;
-  }
-
-  .future_coder_project_1 #future_coder_project_1_title_1 {
-    margin-top: -80px;
-  }
-
-  .future_coder_project_2 #future_coder_project_2_title_1 {
-    margin-top: -80px;
+  .card {
+    width: 50%;
+    height: 100%;
   }
 }
 @media screen and (min-width: 1000px) {
   h2 {
-    font-size: 80px;
-  }
-
-  .goalnut_app a #goalnut_title_1 {
-    margin-top: -80px;
-  }
-
-  .css_zen_garden #css_zen_garden_title_1 {
-    margin-top: -80px;
-  }
-
-  .future_coder_project_1 #future_coder_project_1_title_1 {
-    margin-top: -80px;
-  }
-
-  .future_coder_project_2 #future_coder_project_2_title_1 {
-    margin-top: -80px;
-  }
-
-  .project_row_1 {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 60px;
-  }
-
-  .project_row_2 {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .future_coder_project_1 #future_project_1_bg {
-    display: block;
-    display: relative;
-    width: 90%;
-    height: 60%;
-    padding: 5%;
-  }
-
-  .future_coder_project_1 #future_project_1_display {
-    display: block;
-    display: relative;
-    width: 80%;
-    height: 60%;
-    padding: 10%;
-    margin-top: -68%;
-  }
-
-  .future_coder_project_2 #future_project_2_bg {
-    display: block;
-    display: relative;
-    width: 90%;
-    height: 60%;
-    padding: 5%;
-  }
-
-  .future_coder_project_2 #future_project_2_display {
-    display: block;
-    display: relative;
-    width: 80%;
-    height: 60%;
-    padding: 10%;
-    margin-top: -68%;
+    font-size: 75px;
   }
 }
 .about_me {
