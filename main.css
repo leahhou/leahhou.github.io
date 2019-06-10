@@ -144,7 +144,7 @@ nav a:hover {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100vh;
+  height: 130vh;
   margin-bottom: 20px;
   color: #FFFFFF;
 }
@@ -245,6 +245,10 @@ h2 .slogan_highlight {
 }
 
 @media screen and (min-width: 700px) {
+  .homepage {
+    height: 110vh;
+  }
+
   .slogan {
     padding: 0;
     margin-left: 15%;
@@ -270,7 +274,7 @@ h2 .slogan_highlight {
     height: 8%;
     max-width: 85px;
     min-width: 6px;
-    max-height: 90px;
+    max-height: 85px;
     min-height: 80px;
     padding: 0;
     z-index: 0;
@@ -285,6 +289,12 @@ h2 .slogan_highlight {
     padding: 0;
     margin-left: 40%;
     margin-top: 100px;
+  }
+  .my_signature #name {
+    font-size: 30px;
+  }
+  .my_signature #role_title {
+    font-size: 25px;
   }
 
   .social_media_link {
@@ -719,6 +729,17 @@ h4 {
   width: 200px;
 }
 
+.contact_form textarea {
+  height: 400%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px solid #FFFFFF;
+  background-color: #F2D51D;
+  color: #FFFFFF;
+  font-weight: 200;
+  width: 200px;
+}
+
 .contact_form input[type=submit] {
   color: #FFFFFF;
   border: 2px solid #FFFFFF;
@@ -730,7 +751,6 @@ h4 {
 .contact_form input[type=submit]:hover {
   background-color: #919EFF;
   font-weight: 500;
-  transform: scale(0.9);
 }
 
 .my_contact_details {
@@ -748,12 +768,14 @@ h4 {
 footer {
   background-color: #F2D51D;
   width: 100%;
+  height: 100vh;
   margin: auto;
   height: 40%;
   color: #FFFFFF;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 12px;
   text-align: center;
+  padding: 40px 0;
 }
 
 .social_media_link {
