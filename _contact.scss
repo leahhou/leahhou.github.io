@@ -31,6 +31,16 @@
     font-weight: 200;
     width: 200px;
 }
+.contact_form textarea {
+    height: 400%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid #FFFFFF;
+    background-color: $large-yellow;
+    color:  #FFFFFF;
+    font-weight: 200;
+    width: 200px;
+}
 .contact_form input[type=submit] {
     color: #FFFFFF;
     border: 2px solid #FFFFFF;
@@ -41,7 +51,6 @@
     &:hover {
         background-color: $common-purple;
         font-weight: 500;
-        transform: scale(0.9);
     }
 }
 .my_contact_details {
@@ -57,15 +66,16 @@
 footer {
     background-color: $large-yellow;
     width: 100%;
+    height: 100vh;
     margin: auto;
     height: 40%;
     color: #FFFFFF;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 12px;
     text-align: center;
+    padding:40px 0;
 }
 .social_media_link {
-    // display:relative;
     text-align: center;
     margin: 40px;
     margin-top:-4px;
@@ -111,9 +121,5 @@ footer {
         height: 20px;
         width: 50%;
         margin-left: 20%;
-    }
-
-    .contact_me .social_media_link {
-
     }
 } 
