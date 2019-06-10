@@ -283,14 +283,12 @@
                 </h3>
             </section>
             <div class="contact_wrapper_2">
-                <form class="contact_form">
-                    Name<br>
-                    <input type="text" name="name"><br>
-                    Email<br>
-                    <input type="text" name="email"><br>
+                <form class="contact_form" name="contact_form" method="POST" data-netlify="true" >
+                    Name<br> <input type="text" name="name"><br>
+                    Email<br>  <input type="text" name="email"><br>
                     Message<br>
-                    <textarea rows="4" cols="50" name="message"></textarea><br><br>
-                    <input type="submit" value="Submit">
+                    <textarea name="message"></textarea><br><br>
+                    <button type="submit">Submit</button>
                 </form>
                 <div class="contact_wrapper">
                     <section class="my_contact_details">
