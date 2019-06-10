@@ -740,15 +740,16 @@ h4 {
   width: 200px;
 }
 
-.contact_form input[type=submit] {
+.contact_form button {
   color: #FFFFFF;
   border: 2px solid #FFFFFF;
   padding: 6px;
   background-color: #EDDA1F;
   font-weight: 200;
   width: 200px;
+  height: 180%;
 }
-.contact_form input[type=submit]:hover {
+.contact_form button:hover {
   background-color: #919EFF;
   font-weight: 500;
 }
