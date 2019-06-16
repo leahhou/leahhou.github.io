@@ -86,14 +86,6 @@
     animation: shimmy 4s infinite;
     animation-direction: alternate;
 }
-@keyframes shimmy {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(20px, 50px);
-    }
-}
 #icon_line_1 #react {
     transition: transform 1s ease-in-out;
     &:hover {
@@ -103,14 +95,6 @@
 #icon_line_1 #node {
     animation: shimmy 4s infinite;
     animation-direction: alternate;
-}
-@keyframes shimmy {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(20px, 50px);
-    }
 }
 #icon_line_1 #ruby {
     transition: transform 0.3s ease;
@@ -213,45 +197,6 @@
     #icon_line_2 {
         margin: 5% 5% 5% 10px;
     }
-    .more_about_me p {
-        font-size: 1em;
-        font-weight: 300;
-        display: block;
-        margin-top: 100px;
-        max-width: 900px;
-        width: 80%;
-        margin: auto;
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
-    .videos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-        margin: auto;
-        justify-content: center;
-        margin-top: 10%;
-    }
-    .videos video {
-        margin: 10px;
-        display: inline-block;
-        max-width: 450px;
-    }
 }
 @media screen and (min-width:1000px) {
-    .videos {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 90%;
-        margin: auto;
-        justify-content: center;
-        margin-top: 10%;
-    }
-    .videos video {
-        margin: 10px;
-        display: inline-block;
-        max-width: 450px;
-    }
 }
