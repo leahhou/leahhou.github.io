@@ -439,17 +439,22 @@ p, li {
   background-image: url("images/headshot_formal_resize.png");
 }
 
-nav {
+.top {
   position: relative;
   perspective: 600px;
 }
 
-nav ul {
+.top ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
+}
+.top ul li {
+  border: solid 1px red;
+  padding: 10px;
+  background-color: #e73d3d;
 }
 
 .dropdown {
@@ -506,6 +511,69 @@ nav ul {
   justify-content: center;
   align-items: center;
   line-height: 1.7;
+}
+
+.my_background_part_a {
+  display: flex;
+  flex-direction: column;
+}
+
+.my_background {
+  text-align: center;
+  margin: auto;
+}
+
+.resume_links {
+  text-align: center;
+  margin: auto;
+}
+
+.resume_links ul {
+  display: flex;
+}
+.resume_links ul li a {
+  text-decoration-line: none;
+  text-decoration: none;
+  color: #313131;
+  font-size: 130%;
+  font-weight: 300;
+  padding: 10px;
+  margin: 5px;
+  background-color: #b48ef1;
+}
+.resume_links ul li a:hover {
+  transform: translate(-1px, -1px);
+  background-color: #e5e5ec;
+  color: #7a7a7a;
+}
+.resume_links ul .link_title {
+  border: none;
+  background-color: #e0d2f5;
+}
+.resume_links ul .link_title:hover {
+  color: #313131;
+  background-color: #E6EBEB;
+  transform: none;
+}
+
+.my_skills {
+  margin: 10px auto;
+  text-align: center;
+  font-size: 120%;
+}
+.my_skills .individual_skill {
+  padding: 10px;
+  margin: 5px;
+  background-color: whitesmoke;
+}
+.my_skills img {
+  width: 90px;
+  height: 90px;
+}
+.my_skills .icon_line {
+  margin: 10px auto;
+  display: flex;
+  text-align: center;
 }
 
 .contact_me {
