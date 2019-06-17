@@ -170,6 +170,9 @@ h2 .slogan_highlight {
 }
 .slogan .slogan_red_bg {
   background-color: #db0f04;
+  margin-top: 0;
+  padding-top: 0;
+  line-height: 1.6;
 }
 
 .slogan h2 {
@@ -514,7 +517,6 @@ p, li {
   font-style: italic;
 }
 .my_background p {
-  background-color: white;
   width: 30%;
   text-align: center;
   margin: auto;
@@ -522,11 +524,9 @@ p, li {
   color: #3b4646;
   font-weight: 400;
   line-height: 1.5;
+  text-align: justify;
 }
 .my_background .fact_me_title {
-  background-color: #E6EBEB;
-  background-color: white;
-  font-style: italic;
   margin-top: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
