@@ -1,5 +1,6 @@
 @import "variables";
 
+//general styling
 .about_me {
     background-color: $common-grey;
     font-family: "Roboto", sans-serif;
@@ -29,81 +30,62 @@ p, li {
     background-image: url("images/headshot_formal_resize.png");
 }
 
-// dropdown fact
+// dropdown facts about me
 .top {
 position: relative;
 perspective: 600px;
+margin: 10px auto;
 }
-
 .top ul {
 list-style: none;
 margin: 0;
 padding: 0;
 display: flex;
 justify-content: center;
-li {
-    border: solid 1px red;
-    padding: 10px;
-    background-color: rgb(231, 61, 61);
-    // position: relative;
+    li {
+        padding: 7px;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        border: solid 0px;
+        border-radius: 4%;
+        a {
+            color: $title-blue;
+            font-size: 100%;
+        }
+        &:hover {
+            border: solid 0.5px rgb(252, 232, 57);
+        }
     }
 }
-
 .dropdown {
 opacity: 0;
 position: absolute;
 overflow: hidden;
 padding: 20px;
-top: -20px;
 border-radius: 2px;
 transition: all 0.5s;
-transform: translateY(100px);
+transform: translateX(-265px);
 will-change: opacity;
 display: none;
 }
-
 .trigger-enter .dropdown {
 display: block;
 }
-
 .trigger-enter-active .dropdown {
 opacity: 1;
 }
-
-.dropdownBackground {
-width: 100px;
-height: 100px;
-position: absolute;
-background: #fff;
-border-radius: 4px;
-box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
-transition: all 0.3s, opacity 0.1s, transform 0.2s;
-transform-origin: 50% 0;
-display: flex;
-justify-content: center;
-opacity: 0;
-}
-
 .dropdownBackground.open {
 opacity: 1;
 }
 
-.arrow {
-position: absolute;
-width: 20px;
-height: 20px;
-display: block;
-background: white;
-transform: translateY(-50%) rotate(45deg);
-}
-
 .fact_one {
-min-width: 500px;
+min-width: 600px;
 display: flex;
 justify-content: center;
 align-items: center;
 line-height: 1.7;
 }
+
 //about_me styling
 .my_background_part_a {
     display: flex;
@@ -111,7 +93,29 @@ line-height: 1.7;
 }
 .my_background {
     text-align: center;
-    margin: auto;
+    margin: 10px auto;
+    h2 {
+        font-size: 150%;
+        margin:30px 0 10px 0;
+    }
+    p {
+        background-color: white;
+        width: 30%;
+        text-align: center;
+        margin: auto;
+        padding: 15px;
+        color: rgb(59, 70, 70);
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    .fact_me_title {
+        background-color: $common-grey;
+        // font-style: italic;
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 .resume_links {
     text-align: center;
@@ -119,44 +123,56 @@ line-height: 1.7;
 }
 
 // resume link list
-.resume_links ul {
-    display: flex;
-    li a {
-        text-decoration-line: none;
-        text-decoration: none;
-        color: rgb(49, 49, 49);
-        font-size:130%;
-        font-weight: 300;
-        padding: 10px;
-        margin: 5px;
-        background-color: rgb(180, 142, 241);
-        &:hover {
-            transform: translate(-1px, -1px);
-            background-color: rgb(229, 229, 236);
-            color: rgb(122, 122, 122);
-          }
-    }
-    .link_title {
-        border: none;
-        background-color: rgb(224, 210, 245);
-        &:hover {
+
+.resume_links  {
+        padding-bottom: 20px;
+        width: 35%;
+        .resume_title {
+            font-size: 130%;
+            margin-bottom: 10px;
+        }
+        ul {
+        display: flex;
+        li a {
+            text-decoration-line: none;
+            text-decoration: none;
             color: rgb(49, 49, 49);
+            font-size:110%;
+            font-weight: 400;
+            padding: 6px;
+            margin: 5px;
+            // background-color: rgb(180, 142, 241);
+            // border-bottom: solid 1.2px $title-blue;
+            border-radius: 4%;
+            &:hover {
+                transform: translate(-1px, -1px);
+                // background-color: rgb(229, 229, 236);
+                border-bottom: solid 1.3px rgba(158, 158, 170, 0.89);
+                color: rgb(122, 122, 122);
+            }
+        }
+        .link_title {
+            border: none;
             background-color: $common-grey;
-            transform: none;
+            &:hover {
+                color: rgb(49, 49, 49);
+                border-bottom: solid 0px rgba(158, 158, 170, 0.89);
+                transform: none;
+            }
         }
     }
 }
 
 //skills sections 
 .my_skills {
-    margin: 10px auto;
+    margin: auto;
     text-align: center;
     font-size: 120%;
+    padding: 10px;
     .individual_skill {
         padding: 10px;
         margin: 5px;
-        background-color:rgb(245, 245, 245);
-        // rgb(221, 223, 241);
+        background-color:white;
     }
     img {
         width: 90px;
@@ -166,5 +182,14 @@ line-height: 1.7;
         margin: 10px auto;
        display: flex;
        text-align: center;
+       width: 40%;
+    }
+    h2 {
+        font-size: 110%;
+        margin-bottom: 10px;
+    }
+    h3 {
+        font-size: 90%;
+        margin-bottom: 8px;
     }
 }

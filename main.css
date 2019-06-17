@@ -168,6 +168,12 @@ h2 .slogan_highlight {
   margin-top: 5%;
   width: 80%;
 }
+.slogan .slogan_red_bg {
+  background-color: #db0f04;
+  margin-top: 0;
+  padding-top: 0;
+  line-height: 1.6;
+}
 
 .slogan h2 {
   color: #FFFFFF;
@@ -442,6 +448,7 @@ p, li {
 .top {
   position: relative;
   perspective: 600px;
+  margin: 10px auto;
 }
 
 .top ul {
@@ -452,9 +459,18 @@ p, li {
   justify-content: center;
 }
 .top ul li {
-  border: solid 1px red;
-  padding: 10px;
-  background-color: #e73d3d;
+  padding: 7px;
+  background-color: white;
+  position: relative;
+  border: solid 0px;
+  border-radius: 4%;
+}
+.top ul li a {
+  color: #032644;
+  font-size: 100%;
+}
+.top ul li:hover {
+  border: solid 0.5px #fce839;
 }
 
 .dropdown {
@@ -462,10 +478,9 @@ p, li {
   position: absolute;
   overflow: hidden;
   padding: 20px;
-  top: -20px;
   border-radius: 2px;
   transition: all 0.5s;
-  transform: translateY(100px);
+  transform: translateX(-265px);
   will-change: opacity;
   display: none;
 }
@@ -478,35 +493,12 @@ p, li {
   opacity: 1;
 }
 
-.dropdownBackground {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  background: #fff;
-  border-radius: 4px;
-  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1), 0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s, opacity 0.1s, transform 0.2s;
-  transform-origin: 50% 0;
-  display: flex;
-  justify-content: center;
-  opacity: 0;
-}
-
 .dropdownBackground.open {
   opacity: 1;
 }
 
-.arrow {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  display: block;
-  background: white;
-  transform: translateY(-50%) rotate(45deg);
-}
-
 .fact_one {
-  min-width: 500px;
+  min-width: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -520,7 +512,28 @@ p, li {
 
 .my_background {
   text-align: center;
+  margin: 10px auto;
+}
+.my_background h2 {
+  font-size: 150%;
+  margin: 30px 0 10px 0;
+}
+.my_background p {
+  background-color: white;
+  width: 30%;
+  text-align: center;
   margin: auto;
+  padding: 15px;
+  color: #3b4646;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: justify;
+}
+.my_background .fact_me_title {
+  background-color: #E6EBEB;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .resume_links {
@@ -528,6 +541,14 @@ p, li {
   margin: auto;
 }
 
+.resume_links {
+  padding-bottom: 20px;
+  width: 35%;
+}
+.resume_links .resume_title {
+  font-size: 130%;
+  margin-bottom: 10px;
+}
 .resume_links ul {
   display: flex;
 }
@@ -535,36 +556,37 @@ p, li {
   text-decoration-line: none;
   text-decoration: none;
   color: #313131;
-  font-size: 130%;
-  font-weight: 300;
-  padding: 10px;
+  font-size: 110%;
+  font-weight: 400;
+  padding: 6px;
   margin: 5px;
-  background-color: #b48ef1;
+  border-radius: 4%;
 }
 .resume_links ul li a:hover {
   transform: translate(-1px, -1px);
-  background-color: #e5e5ec;
+  border-bottom: solid 1.3px rgba(158, 158, 170, 0.89);
   color: #7a7a7a;
 }
 .resume_links ul .link_title {
   border: none;
-  background-color: #e0d2f5;
+  background-color: #E6EBEB;
 }
 .resume_links ul .link_title:hover {
   color: #313131;
-  background-color: #E6EBEB;
+  border-bottom: solid 0px rgba(158, 158, 170, 0.89);
   transform: none;
 }
 
 .my_skills {
-  margin: 10px auto;
+  margin: auto;
   text-align: center;
   font-size: 120%;
+  padding: 10px;
 }
 .my_skills .individual_skill {
   padding: 10px;
   margin: 5px;
-  background-color: whitesmoke;
+  background-color: white;
 }
 .my_skills img {
   width: 90px;
@@ -574,6 +596,15 @@ p, li {
   margin: 10px auto;
   display: flex;
   text-align: center;
+  width: 40%;
+}
+.my_skills h2 {
+  font-size: 110%;
+  margin-bottom: 10px;
+}
+.my_skills h3 {
+  font-size: 90%;
+  margin-bottom: 8px;
 }
 
 .contact_me {
