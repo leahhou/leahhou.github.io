@@ -492,7 +492,7 @@ p, li {
 }
 
 .fact_one {
-  min-width: 500px;
+  min-width: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -568,14 +568,15 @@ p, li {
 }
 
 .my_skills {
-  margin: 10px auto;
+  margin: auto;
   text-align: center;
   font-size: 120%;
+  padding: 10px;
 }
 .my_skills .individual_skill {
   padding: 10px;
   margin: 5px;
-  background-color: whitesmoke;
+  background-color: white;
 }
 .my_skills img {
   width: 90px;
@@ -586,6 +587,14 @@ p, li {
   display: flex;
   text-align: center;
   width: 40%;
+}
+.my_skills h2 {
+  font-size: 120%;
+  margin-bottom: 10px;
+}
+.my_skills h3 {
+  font-size: 90%;
+  margin-bottom: 8px;
 }
 
 .contact_me {

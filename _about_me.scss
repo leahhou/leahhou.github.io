@@ -76,7 +76,7 @@ opacity: 1;
 }
 
 .fact_one {
-min-width: 500px;
+min-width: 600px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -153,13 +153,14 @@ line-height: 1.7;
 
 //skills sections 
 .my_skills {
-    margin: 10px auto;
+    margin: auto;
     text-align: center;
     font-size: 120%;
+    padding: 10px;
     .individual_skill {
         padding: 10px;
         margin: 5px;
-        background-color:rgb(245, 245, 245);
+        background-color:white;
     }
     img {
         width: 90px;
@@ -170,5 +171,13 @@ line-height: 1.7;
        display: flex;
        text-align: center;
        width: 40%;
+    }
+    h2 {
+        font-size: 120%;
+        margin-bottom: 10px;
+    }
+    h3 {
+        font-size: 90%;
+        margin-bottom: 8px;
     }
 }
