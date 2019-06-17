@@ -442,6 +442,7 @@ p, li {
 .top {
   position: relative;
   perspective: 600px;
+  margin: 10px auto;
 }
 
 .top ul {
@@ -452,9 +453,15 @@ p, li {
   justify-content: center;
 }
 .top ul li {
-  border: solid 1px red;
-  padding: 10px;
-  background-color: #e73d3d;
+  padding: 8px;
+  background-color: #f5bcb8;
+  border: solid 0.5px #f5bcb8;
+  position: relative;
+  border-radius: 4%;
+}
+.top ul li a {
+  color: white;
+  font-size: 110%;
 }
 
 .dropdown {
@@ -520,7 +527,30 @@ p, li {
 
 .my_background {
   text-align: center;
+  margin: 10px auto;
+}
+.my_background h2 {
+  font-size: 150%;
+  margin: 30px 0 10px 0;
+  font-style: italic;
+}
+.my_background p {
+  background-color: white;
+  width: 30%;
+  text-align: center;
   margin: auto;
+  padding: 15px;
+  color: #3b4646;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.my_background .fact_me_title {
+  background-color: #E6EBEB;
+  background-color: white;
+  font-style: italic;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .resume_links {
@@ -535,11 +565,13 @@ p, li {
   text-decoration-line: none;
   text-decoration: none;
   color: #313131;
-  font-size: 130%;
+  font-size: 110%;
   font-weight: 300;
-  padding: 10px;
+  padding: 6px;
   margin: 5px;
   background-color: #b48ef1;
+  border: solid 0.5px #b48ef1;
+  border-radius: 4%;
 }
 .resume_links ul li a:hover {
   transform: translate(-1px, -1px);
@@ -574,6 +606,7 @@ p, li {
   margin: 10px auto;
   display: flex;
   text-align: center;
+  width: 40%;
 }
 
 .contact_me {
