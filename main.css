@@ -517,6 +517,7 @@ p, li {
   font-style: italic;
 }
 .my_background p {
+  background-color: white;
   width: 30%;
   text-align: center;
   margin: auto;
@@ -527,6 +528,7 @@ p, li {
   text-align: justify;
 }
 .my_background .fact_me_title {
+  background-color: #E6EBEB;
   margin-top: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
