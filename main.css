@@ -168,6 +168,9 @@ h2 .slogan_highlight {
   margin-top: 5%;
   width: 80%;
 }
+.slogan .slogan_red_bg {
+  background-color: #db0f04;
+}
 
 .slogan h2 {
   color: #FFFFFF;
