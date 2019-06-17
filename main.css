@@ -542,7 +542,11 @@ p, li {
   margin: auto;
 }
 
-.resume_links h2 {
+.resume_links {
+  padding-bottom: 20px;
+  width: 35%;
+}
+.resume_links .resume_title {
   font-size: 130%;
   margin-bottom: 10px;
 }
@@ -554,7 +558,7 @@ p, li {
   text-decoration: none;
   color: #313131;
   font-size: 110%;
-  font-weight: 300;
+  font-weight: 400;
   padding: 6px;
   margin: 5px;
   border-radius: 4%;
