@@ -124,33 +124,40 @@ line-height: 1.7;
 }
 
 // resume link list
-.resume_links ul {
-    display: flex;
-    li a {
-        text-decoration-line: none;
-        text-decoration: none;
-        color: rgb(49, 49, 49);
-        font-size:110%;
-        font-weight: 300;
-        padding: 6px;
-        margin: 5px;
-        // background-color: rgb(180, 142, 241);
-        // border-bottom: solid 1.2px $title-blue;
-        border-radius: 4%;
-        &:hover {
-            transform: translate(-1px, -1px);
-            // background-color: rgb(229, 229, 236);
-            border-bottom: solid 1.3px rgba(158, 158, 170, 0.89);
-            color: rgb(122, 122, 122);
-          }
-    }
-    .link_title {
-        border: none;
-        background-color: $common-grey;
-        &:hover {
+
+.resume_links  {
+        h2 {
+            font-size: 130%;
+            margin-bottom: 10px;
+        }
+        ul {
+        display: flex;
+        li a {
+            text-decoration-line: none;
+            text-decoration: none;
             color: rgb(49, 49, 49);
-            border-bottom: solid 0px rgba(158, 158, 170, 0.89);
-            transform: none;
+            font-size:110%;
+            font-weight: 300;
+            padding: 6px;
+            margin: 5px;
+            // background-color: rgb(180, 142, 241);
+            // border-bottom: solid 1.2px $title-blue;
+            border-radius: 4%;
+            &:hover {
+                transform: translate(-1px, -1px);
+                // background-color: rgb(229, 229, 236);
+                border-bottom: solid 1.3px rgba(158, 158, 170, 0.89);
+                color: rgb(122, 122, 122);
+            }
+        }
+        .link_title {
+            border: none;
+            background-color: $common-grey;
+            &:hover {
+                color: rgb(49, 49, 49);
+                border-bottom: solid 0px rgba(158, 158, 170, 0.89);
+                transform: none;
+            }
         }
     }
 }

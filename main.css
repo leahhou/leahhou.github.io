@@ -542,6 +542,10 @@ p, li {
   margin: auto;
 }
 
+.resume_links h2 {
+  font-size: 130%;
+  margin-bottom: 10px;
+}
 .resume_links ul {
   display: flex;
 }
