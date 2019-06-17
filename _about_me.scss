@@ -1,30 +1,17 @@
 @import "variables";
 
+//general styling
 .about_me {
     background-color: $common-grey;
+    font-family: "Roboto", sans-serif;
 }
-.abou_me h2 span {
-    display: inline-block;
+a {
+    text-decoration-line: none;
+    text-decoration: none;
+    font-size:100%;
 }
-.about_me h2 {
-    font-size: 300%;
-    color: $small-yellow;
-    margin-top: 50px;
-    display: inline-block;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-
-}
-.about_me p {
-    font-size: 105%;
-    color: $text-grey;
-    font-weight: 200;
-    display: inline-block;
-    text-align: justify;
-    margin-top: -100px;
-    max-width: 300px;
-    margin: auto;
+p, li {
+    font-family: "Roboto", sans-serif;
 }
 .headshot {
     background-image: url("images/headshot_casual_resize.png");
@@ -43,215 +30,166 @@
     background-image: url("images/headshot_formal_resize.png");
 }
 
-.my_background_title {
-    display: inline-block;
+// dropdown facts about me
+.top {
+position: relative;
+perspective: 600px;
+margin: 10px auto;
+}
+.top ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+    li {
+        padding: 7px;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        border: solid 0px;
+        border-radius: 4%;
+        a {
+            color: $title-blue;
+            font-size: 100%;
+        }
+        &:hover {
+            border: solid 0.5px rgb(252, 232, 57);
+        }
+    }
+}
+.dropdown {
+opacity: 0;
+position: absolute;
+overflow: hidden;
+padding: 20px;
+border-radius: 2px;
+transition: all 0.5s;
+transform: translateX(-265px);
+will-change: opacity;
+display: none;
+}
+.trigger-enter .dropdown {
+display: block;
+}
+.trigger-enter-active .dropdown {
+opacity: 1;
+}
+.dropdownBackground.open {
+opacity: 1;
+}
+
+.fact_one {
+min-width: 600px;
+display: flex;
+justify-content: center;
+align-items: center;
+line-height: 1.7;
+}
+
+//about_me styling
+.my_background_part_a {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
-    width: 30%;
-    margin-left: 40px;
 }
-.my_background span {
-    display: inline-block;
+.my_background {
+    text-align: center;
+    margin: 10px auto;
+    h2 {
+        font-size: 150%;
+        margin:30px 0 10px 0;
+    }
+    p {
+        background-color: white;
+        width: 30%;
+        text-align: center;
+        margin: auto;
+        padding: 15px;
+        color: rgb(59, 70, 70);
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    .fact_me_title {
+        background-color: $common-grey;
+        // font-style: italic;
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
-.my_background_part_a p {
-    width: 60%;
-    margin-top: -40%;
-    margin-left: 30%;
-    margin-right: 10%;
-}
-#skills_icons {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-#icon_line_1 {
-    display: flex;
-    margin: 5% 20%;
-    justify-content: space-around;
-}
-#icon_line_1 img {
-    display: block;
-    width: 60%;
-    height: 60%;
-    max-width: 80px;
-    max-height: 80px;
+.resume_links {
+    text-align: center;
     margin: auto;
 }
-#javascript {
-    &:hover {
-        transform: translateX(15px);
+
+// resume link list
+
+.resume_links  {
+        padding-bottom: 20px;
+        width: 35%;
+        .resume_title {
+            font-size: 130%;
+            margin-bottom: 10px;
+        }
+        ul {
+        display: flex;
+        li a {
+            text-decoration-line: none;
+            text-decoration: none;
+            color: rgb(49, 49, 49);
+            font-size:110%;
+            font-weight: 400;
+            padding: 6px;
+            margin: 5px;
+            // background-color: rgb(180, 142, 241);
+            // border-bottom: solid 1.2px $title-blue;
+            border-radius: 4%;
+            &:hover {
+                transform: translate(-1px, -1px);
+                // background-color: rgb(229, 229, 236);
+                border-bottom: solid 1.3px rgba(158, 158, 170, 0.89);
+                color: rgb(122, 122, 122);
+            }
+        }
+        .link_title {
+            border: none;
+            background-color: $common-grey;
+            &:hover {
+                color: rgb(49, 49, 49);
+                border-bottom: solid 0px rgba(158, 158, 170, 0.89);
+                transform: none;
+            }
+        }
     }
-    animation: shimmy 4s infinite;
-    animation-direction: alternate;
 }
-@keyframes shimmy {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(20px, 50px);
-    }
-}
-#icon_line_1 #react {
-    transition: transform 1s ease-in-out;
-    &:hover {
-        transform: rotate(1000deg);
-    }
-}
-#icon_line_1 #node {
-    animation: shimmy 4s infinite;
-    animation-direction: alternate;
-}
-@keyframes shimmy {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(20px, 50px);
-    }
-}
-#icon_line_1 #ruby {
-    transition: transform 0.3s ease;
-    &:hover {
-        transform: skew(25deg, 10deg);
-    }
-}
-#icon_line_2 {
-    display: flex;
-    margin: 0 20%;
-    justify-content: space-around;
-}
-#icon_line_2 img {
-    display: block;
-    width: 60%;
-    height: 60%;
-    max-width: 100px;
-    max-height: 110px;
+
+//skills sections 
+.my_skills {
     margin: auto;
-}
-#icon_line_2 #ruby_on_rail {
-    max-width: 65px;
-    max-height: 65px;
-    transition: transform 1s ease-out;
-    &:hover {
-        transform: scale(0.5, 2.5);
+    text-align: center;
+    font-size: 120%;
+    padding: 10px;
+    .individual_skill {
+        padding: 10px;
+        margin: 5px;
+        background-color:white;
     }
-}
-#icon_line_2 #html {
-    transition: transform 1s ease-in-out;
-    & :hover {
-        transform: rotate(1000deg);
+    img {
+        width: 90px;
+        height: 90px;
     }
-}
-#icon_line_2 #css {
-    transition: transform 1s ease-in-out;
-    & :hover {
-        transform: rotate(-100deg);
+    .icon_line {
+        margin: 10px auto;
+       display: flex;
+       text-align: center;
+       width: 40%;
     }
-}
-#icon_line_2 #photoshop {
-    max-width: 72px;
-    max-height: 72px;
-    &:hover {
-        transform: translate(15px, -40px);
+    h2 {
+        font-size: 110%;
+        margin-bottom: 10px;
     }
-}
-.more_about_me {
-    padding-bottom: 200px;
-}
-.more_about_me p {
-    font-size: 105%;
-    color: $text-grey;
-    font-weight: 200;
-    display: block;
-    text-align: justify;
-    max-width: 400px;
-    width: 80%;
-    margin: auto;
-    padding-top: 8%;
-    padding-bottom: 5%;
-}
-.videos video {
-    display: block;
-    width: 80%;
-    max-width: 400px;
-    margin: 10px auto 20px;
-}
-@media screen and (min-width:650px) {
-    .headshot {
-        height: 500px;
-        width: 500px;
-        max-width: 500px;
-        max-height: 500px;
-        margin-top: 50px;
-    }
-    .about_me h2 {
-        font-size: 7em;
-        color: $small-yellow;
-        margin-top: 100px;
-        display: inline-block;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-    }
-    .my_background_part_a p {
-        font-size: 1em;
-        font-weight: 300;
-        display: inline-block;
-        margin-top: -100%;
-        max-width: 600px;
-    }
-    #skill_icons {
-        display: flex;
-        justify-content: center;
-    }
-    #icon_line_1 {
-        margin: 5% 0 5% 5%;
-    }
-    #icon_line_2 {
-        margin: 5% 5% 5% 10px;
-    }
-    .more_about_me p {
-        font-size: 1em;
-        font-weight: 300;
-        display: block;
-        margin-top: 100px;
-        max-width: 900px;
-        width: 80%;
-        margin: auto;
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
-    .videos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-        margin: auto;
-        justify-content: center;
-        margin-top: 10%;
-    }
-    .videos video {
-        margin: 10px;
-        display: inline-block;
-        max-width: 450px;
-    }
-}
-@media screen and (min-width:1000px) {
-    .videos {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 90%;
-        margin: auto;
-        justify-content: center;
-        margin-top: 10%;
-    }
-    .videos video {
-        margin: 10px;
-        display: inline-block;
-        max-width: 450px;
+    h3 {
+        font-size: 90%;
+        margin-bottom: 8px;
     }
 }
