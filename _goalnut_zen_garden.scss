@@ -18,7 +18,7 @@ ul {
     display: block;
 }
 
-#project_intro {
+.project_intro {
     display: block;
     width: 80%;
     margin: auto;
@@ -43,21 +43,9 @@ ul {
     color: $title-blue;
     padding: 2.5px;
     &:hover {
-        transform: scale(1.2);
         background-color: $common-grey;
-        border-color: $common-purple;
-        color: $common-purple;
+        border-color: $common-grey;
         }
-}
-.project_info {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
-    grid-auto-rows: minmax (50px, auto);
-    max-width: 60%;
-    margin-top: 30px;
-    margin: auto;
 }
 .next_project_button {
     text-decoration: none;
@@ -91,7 +79,7 @@ ul {
         align-items: center;
         margin-left: 80px;
     }
-    #project_intro {
+    .project_intro {
         text-align: left;
     }
     #title {
@@ -106,14 +94,36 @@ ul {
     .project_info {
         font-size: 20px;
         margin-top: 55px;
-        margin-left: 20px;
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        .project_intro {
+            font-size: 90%;
+            font-weight: 400;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: $title-blue;
+        }
     }
-    #title h2 {
-        font-size: 30px;
+    .link_to_projects {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 70%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 60px;
+        a {
+            margin-right: 8px;
+        }
     }
     .next_project_button {
-        font-size: 50px;
-        font-weight: 700;
+      width: 30%;
+      a {
+        font-size: 700;
+      }
     }
 }
 

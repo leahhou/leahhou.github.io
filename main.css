@@ -601,12 +601,90 @@ p, li {
 .my_skills h2 {
   font-size: 110%;
   margin-bottom: 10px;
+  text-align: center;
 }
 .my_skills h3 {
   font-size: 90%;
   margin-bottom: 8px;
+  text-align: center;
 }
 
+@media screen and (max-width: 900px) {
+  .my_skills img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  .my_background .fact_me_title {
+    width: 50%;
+  }
+
+  .top ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .top ul li {
+    padding: 5px;
+  }
+  .top ul li a {
+    font-size: 90%;
+  }
+
+  .resume_links ul {
+    text-align: center;
+    margin: auto;
+    flex-direction: column;
+  }
+  .resume_links ul .link_title {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .my_skills img {
+    max-width: 25px;
+    max-height: 25px;
+  }
+
+  .top {
+    width: 50%;
+  }
+  .top ul li {
+    padding: 5px;
+    margin: 6px;
+  }
+  .top ul li a {
+    font-size: 80%;
+  }
+
+  .dropdown {
+    padding: 10px;
+  }
+
+  .fact_one {
+    min-width: 500px;
+  }
+  .fact_one p {
+    font-size: 80%;
+    line-height: 1.4;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 400px) {
+  .my_background .fact_me_title {
+    width: 70%;
+  }
+
+  .fact_one {
+    min-width: 300px;
+  }
+
+  .dropdown {
+    transform: translateX(-125px);
+  }
+}
 .contact_me {
   background-color: #F2D51D;
   width: 100%;
@@ -766,7 +844,7 @@ ul {
   display: block;
 }
 
-#project_intro {
+.project_intro {
   display: block;
   width: 80%;
   margin: auto;
@@ -794,21 +872,8 @@ ul {
   padding: 2.5px;
 }
 .link_to_projects #goalnut_github_button:hover {
-  transform: scale(1.2);
   background-color: #E6EBEB;
-  border-color: #919EFF;
-  color: #919EFF;
-}
-
-.project_info {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
-  grid-auto-rows: minmax 50px, auto;
-  max-width: 60%;
-  margin-top: 30px;
-  margin: auto;
+  border-color: #E6EBEB;
 }
 
 .next_project_button {
@@ -847,7 +912,7 @@ ul {
     margin-left: 80px;
   }
 
-  #project_intro {
+  .project_intro {
     text-align: left;
   }
 
@@ -864,16 +929,38 @@ ul {
   .project_info {
     font-size: 20px;
     margin-top: 55px;
-    margin-left: 20px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .project_info .project_intro {
+    font-size: 90%;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #032644;
   }
 
-  #title h2 {
-    font-size: 30px;
+  .link_to_projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 60px;
+  }
+  .link_to_projects a {
+    margin-right: 8px;
   }
 
   .next_project_button {
-    font-size: 50px;
-    font-weight: 700;
+    width: 30%;
+  }
+  .next_project_button a {
+    font-size: 700;
   }
 }
 html {
