@@ -601,12 +601,90 @@ p, li {
 .my_skills h2 {
   font-size: 110%;
   margin-bottom: 10px;
+  text-align: center;
 }
 .my_skills h3 {
   font-size: 90%;
   margin-bottom: 8px;
+  text-align: center;
 }
 
+@media screen and (max-width: 900px) {
+  .my_skills img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  .my_background .fact_me_title {
+    width: 50%;
+  }
+
+  .top ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .top ul li {
+    padding: 5px;
+  }
+  .top ul li a {
+    font-size: 90%;
+  }
+
+  .resume_links ul {
+    text-align: center;
+    margin: auto;
+    flex-direction: column;
+  }
+  .resume_links ul .link_title {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .my_skills img {
+    max-width: 25px;
+    max-height: 25px;
+  }
+
+  .top {
+    width: 50%;
+  }
+  .top ul li {
+    padding: 5px;
+    margin: 6px;
+  }
+  .top ul li a {
+    font-size: 80%;
+  }
+
+  .dropdown {
+    padding: 10px;
+  }
+
+  .fact_one {
+    min-width: 500px;
+  }
+  .fact_one p {
+    font-size: 80%;
+    line-height: 1.4;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 400px) {
+  .my_background .fact_me_title {
+    width: 70%;
+  }
+
+  .fact_one {
+    min-width: 300px;
+  }
+
+  .dropdown {
+    transform: translateX(-125px);
+  }
+}
 .contact_me {
   background-color: #F2D51D;
   width: 100%;
@@ -829,7 +907,7 @@ ul {
   margin: auto;
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (min-width: 630px) {
   .project_info {
     display: flex;
     flex-direction: column;
